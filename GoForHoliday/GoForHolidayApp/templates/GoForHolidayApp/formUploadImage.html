@@ -1,0 +1,63 @@
+{% block content %}
+<div
+  class="container py-5 bg-light border-dark rounded border-2 border-dark border"
+>
+  <!-- For demo purpose -->
+  <div class="text-black text-center">
+    <h1 class="display-4">Image upload</h1>
+    <p class="lead mb-0">
+      Upload what captive you the most during your trip.
+    </p>
+    <img
+      src="https://res.cloudinary.com/mhmd/image/upload/v1564991372/image_pxlho1.svg"
+      alt=""
+      width="150"
+      class="mb-4 bg-dark"
+      draggable="false"
+    />
+  </div>
+
+  <div class="row py-4">
+    <div class="col-lg-8 mx-auto">
+      <!-- Upload image input-->
+      <div class="input-group mb-3 px-2 py-2 rounded-pill bg-dark shadow-sm">
+        <input
+          id="upload"
+          type="file"
+          onchange="readURL(this);"
+          class="form-control border-0"
+          name="travel-image"
+        />
+        <label
+          id="upload-label"
+          for="upload"
+          class="font-weight-light text-white"
+          >Choose file
+        </label>
+        <div class="input-group-append">
+          <label for="upload" class="btn btn-light m-0 rounded-pill px-4">
+            <i class="fa fa-cloud-upload mr-2 text-muted"></i
+            ><small class="text-uppercase font-weight-bold text-muted"
+              >Choose file</small
+            ></label
+          >
+        </div>
+      </div>
+
+      <!-- Uploaded image area-->
+      <p class="font-italic text-black text-center">
+        The image uploaded will be rendered inside the box below.
+      </p>
+      <div class="image-area mt-4">
+        <img
+          id="imageResult"
+          src="#"
+          alt=""
+          class="img-fluid rounded shadow-sm mx-auto d-block noSelect"
+          draggable="false"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock content %}

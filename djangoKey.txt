@@ -1,0 +1,26 @@
+Install django
+python3 -m pip install django
+
+Check version of django
+django --version
+
+Start new django project
+django-admin startproject myproject
+
+Start new django app
+python3 manage.py startapp myapp
+
+Run django app on the server
+python3 manage.py runserver
+
+Quit server
+CTRL + c
+
+Make migration to a particular app
+python3 manage.py makemigrations myapp
+
+Show database operation
+python3 manage.py sqlmigrate myapp 0002
+
+Apply migration
+python3 manage.py migrate

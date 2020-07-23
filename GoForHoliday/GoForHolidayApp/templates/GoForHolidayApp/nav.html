@@ -1,0 +1,19 @@
+{% block content %}
+<nav
+  id="wrapper-nav"
+  class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark"
+  role="tablist"
+>
+  <!-- prettier-ignore -->
+  {% include 'GoForHolidayApp/navButton.html' %}
+  <div class="collapse navbar-collapse" id="navbarToggler">
+    <!-- prettier-ignore -->
+    <a style="cursor: pointer;" id="navbar-brand-name" class="navbar-brand text-bold">
+      {% include 'GoForHolidayApp/brandName.html' %}
+    </a>
+    <!-- prettier-ignore -->
+    {% include 'GoForHolidayApp/navItem.html' %} 
+    {% include 'GoForHolidayApp/navSearch.html' %}
+  </div>
+</nav>
+{% endblock content %}

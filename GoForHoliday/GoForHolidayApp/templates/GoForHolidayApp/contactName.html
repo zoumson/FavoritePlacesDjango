@@ -1,0 +1,30 @@
+{% block content %}
+<div id="wrapper-contact-name" class="modal-body col-md-8 row">
+  <div id="contactNameCol1" class="col-md-6">
+    <label class="bg-primary p-1 text-white" for="contact-first-name"
+      >First Name</label
+    >
+    <input
+      type="text"
+      class="form-control mb-2"
+      id="contact-first-name"
+      value="Adama"
+      name="contact-first-name"
+      required
+    />
+  </div>
+  <div id="contactNameCol2" class="col-md-6">
+    <label class="bg-primary p-1 text-white" for="contact-last-name"
+      >Last Name</label
+    >
+    <input
+      type="text"
+      class="form-control"
+      id="contact-last-name"
+      value="Zouma"
+      name="contact-last-name"
+      required
+    />
+  </div>
+</div>
+{% endblock content %}

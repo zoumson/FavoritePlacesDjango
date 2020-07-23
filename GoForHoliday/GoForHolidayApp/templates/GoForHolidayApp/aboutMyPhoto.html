@@ -1,0 +1,25 @@
+{% block content %} {% load static %}
+<div id="wrapper-photo-cv" class="d-flex align-items-center flex-column">
+  <div>
+    <img
+      id="my-photo"
+      draggable="false"
+      class="img-fluid float-left overflow-auto noSelect"
+      alt="Adama Zouma"
+      src="{% static 'GoForHolidayApp/image/adam.png' %}"
+      alt=""
+    />
+  </div>
+
+  <div id="wrapper-cv" class="d-flex justify-content-center">
+    <a
+      class="noSelect text-center"
+      id="cv-download-link"
+      href="{% static 'GoForHolidayApp/pdf/cv.pdf' %}"
+      download="AdamaZoumaCv"
+      >Download CV</a
+    >
+  </div>
+</div>
+
+{% endblock content %}

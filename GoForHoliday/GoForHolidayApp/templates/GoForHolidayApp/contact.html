@@ -1,0 +1,20 @@
+{% extends 'GoForHolidayApp/base.html' %} {% block content %}
+<div id="content-contact" class="container-fluid overflow-auto my-content">
+  <h2
+    class="text-uppercase bg-success text-white d-flex justify-content-center p-2"
+  >
+    Awesome Places Over The World!!
+  </h2>
+  <div class="d-flex justify-content-center">
+    <p
+      class="text-capitalize w-50 font-italic font-weight-bold d-flex justify-content-center bg-danger text-white p-2"
+    >
+      Please Send Us Your Feedbacks
+    </p>
+  </div>
+
+  <!-- prettier-ignore -->
+  {% include 'GoForHolidayApp/contactForm.html' %}
+</div>
+
+{% endblock content %}

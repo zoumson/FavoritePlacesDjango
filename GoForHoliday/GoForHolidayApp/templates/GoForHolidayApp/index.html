@@ -1,0 +1,28 @@
+{% extends 'GoForHolidayApp/base.html' %} {% block content %}
+<div id="content-index" class="container-fluid my-content">
+  <h2
+    class="text-uppercase bg-success text-white d-flex justify-content-center p-2"
+  >
+    Awesome Places Over The World!!
+  </h2>
+
+  <div class="modal-body row h-100">
+    <div class="col-md-6">
+      {% for place in places %}
+      <div class="place-info row d-flex flex-column bg-white mt-2 mr-1 p-2">
+        <h3 class="text-dark d-flex justify-content-center bg-warning">
+          {{place.placeName}}
+        </h3>
+        <span><p class="text-dark">{{place.experience}}</p></span>
+      </div>
+      {% endfor %}
+    </div>
+
+    <div class="col-md-6">
+      <!-- prettier-ignore -->
+      {% include 'GoForHolidayApp/indexQuote.html' %} 
+      {% include 'GoForHolidayApp/indexWeather.html' %}
+    </div>
+  </div>
+</div>
+{% endblock content %}

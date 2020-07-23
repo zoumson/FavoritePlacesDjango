@@ -1,0 +1,24 @@
+{% block content %}{% load static %}
+
+<img
+  draggable="false"
+  style="margin-bottom: 0.2em;"
+  width="25em"
+  height="25em"
+  src="{% static 'GoForHolidayApp/image/brandBlack.png' %}"
+  alt=""
+/>
+<span id="wrapper-brand-name">
+  <span style="font-style: italic; color: red;" id="brand-name-first-letter"
+    >Z</span
+  ><!--remove white space between span--><span
+    id="brand-name-middle-word"
+    style="color: yellow;"
+    >oum</span
+  ><!----><span id="brand-name-comma" style="color: white;">'</span>
+
+  <span style="font-style: italic; color: green;" id="brand-name-last-letter"
+    >C</span
+  >
+</span>
+{% endblock content %}

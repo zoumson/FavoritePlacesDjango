@@ -1,0 +1,27 @@
+{% block content %}
+<form method="POST" action="/addPlaceSubmission">
+  {% csrf_token %}
+  <div
+    id="wrapper-place-name-travel-time"
+    class="form-row container-fluid my-content overflow-auto flex-column"
+  >
+    <div id="add-place-form-col12" class="modal-body row">
+      <div id="add-place-form-col1" style="background: white;" class="col-md-6">
+        <!-- prettier-ignore -->
+        {% include 'GoForHolidayApp/formPlaceName.html' %}
+        {% include 'GoForHolidayApp/formTravelTime.html' %} 
+        {% include 'GoForHolidayApp/formExperience.html' %}
+      </div>
+      <div id="add-place-form-col2" class="col-md-6">
+        <!-- prettier-ignore -->
+        {% include 'GoForHolidayApp/addPlaceImage.html' %}
+      </div>
+    </div>
+    <div>
+      <!-- prettier-ignore -->
+      <!--{% include 'GoForHolidayApp/formAgreement.html' %}-->
+      {% include 'GoForHolidayApp/formSubmit.html' %}
+    </div>
+  </div>
+</form>
+{% endblock content %}

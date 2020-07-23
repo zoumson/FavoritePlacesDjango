@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      fetch(
+        'https://api.openweathermap.org/data/2.5/weather?q=London&appid=bc6c6338b16561ff04f1d3629252b86e'
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
+    </script>
+  </body>
+</html>

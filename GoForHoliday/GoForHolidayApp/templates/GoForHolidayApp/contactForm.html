@@ -1,0 +1,21 @@
+{% block content %}
+<form method="POST" action="/messageSubmission">
+  {% csrf_token %}
+  <!-- prettier-ignore -->
+  {% include 'GoForHolidayApp/contactName.html' %}
+    {% include 'GoForHolidayApp/contactEmail.html' %}
+
+  <div class="modal-body row h-100">
+    <div class="col-md-8">
+      <!-- prettier-ignore -->
+      {% include 'GoForHolidayApp/contactMessage.html' %}
+      {% include 'GoForHolidayApp/contactSubmit.html' %}
+    </div>
+
+    <div class="col-md-4">
+      <!-- prettier-ignore -->
+      {% include 'GoForHolidayApp/contactImage.html' %}
+    </div>
+  </div>
+</form>
+{% endblock content %}

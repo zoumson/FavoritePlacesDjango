@@ -1,0 +1,13 @@
+{% extends 'GoForHolidayApp/base.html' %} {% block content %}
+<div id="content-about" class="container-fluid my-content overflow-auto">
+  <div class="modal-body row">
+    <div class="col-md-3">
+      {% include 'GoForHolidayApp/aboutMyPhoto.html' %}
+    </div>
+    <div class="col-md-9 bg-white">
+      {% include 'GoForHolidayApp/aboutDescription.html' %}
+    </div>
+  </div>
+</div>
+
+{% endblock content %}

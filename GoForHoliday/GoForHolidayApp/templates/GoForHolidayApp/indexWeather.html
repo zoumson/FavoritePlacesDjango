@@ -1,0 +1,27 @@
+{% block content %}
+
+<div class="wrapper-weather d-flex flex-column bg-primary mt-2">
+  <div class="input-weather d-flex justify-content-center">
+    <div class="form-inline">
+      <div class="form-group mx-sm-3 mt-3">
+        <label for="enter-city" class="sr-only">City</label>
+        <input
+          id="enter-city"
+          type="text"
+          class="form-control"
+          placeholder="Enter City"
+        />
+      </div>
+      <button id="submit-weather" type="submit" class="btn btn-info mt-3">
+        Check Weather
+      </button>
+    </div>
+  </div>
+  <div id="display-weather">
+    <h1 class="text-white d-flex justify-content-center" id="city-name"></h1>
+    <div class="text-white d-flex justify-content-center" id="city-temp"></div>
+    <div class="text-white d-flex justify-content-center" id="city-desc"></div>
+  </div>
+</div>
+
+{% endblock content %}
